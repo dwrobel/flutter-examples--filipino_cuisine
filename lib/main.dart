@@ -194,6 +194,9 @@ class HState extends State<Home> {
         children: <Widget>[
           Expanded(flex: 5,
             child: Swiper(
+                autoplay: true,
+                duration: 3000,
+                autoplayDelay: 2000,
                 onIndexChanged: (n) => setState(() => fi = fd[n]),
                 itemCount: fd.length,
                 itemBuilder: (cx, i) {
